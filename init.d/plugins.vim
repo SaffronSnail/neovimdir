@@ -1,4 +1,5 @@
 call plug#begin('~/.local/share/nvim/plugged')
+
 " enhanced status bar
 Plug 'vim-airline/vim-airline'
 
@@ -6,13 +7,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " code-completion that takes advantage of neovim's async abilities
+" if you want to use it disable YouCompleteMe
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" enhance c/c++ completeion with Clang
+Plug 'zchee/deoplete-clang'
+
+" auto-generate doxygen comments
+Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " shows git changes
 Plug 'airblade/vim-gitgutter'
-
-" removes trailing whitespace
-Plug 'thirtythreeforty/lessspace.vim'
 
 " lint asynchronously (and more?)
 Plug 'neomake/neomake'
@@ -20,7 +25,7 @@ Plug 'neomake/neomake'
 " rust syntax highlighting
 Plug 'rust-lang/rust.vim'
 
-" enahanced tab completion
+" enahanced tab completion; unfortunately incompatible with YouCompleteMe
 Plug 'ervandew/supertab'
 
 " snippets allow code completion based on templates (see vim-snippets)
@@ -34,5 +39,9 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " toml syntax
 Plug 'cespare/vim-toml'
+
+" popular completion plugin; if you want to enable it disable deoplete
+" Plug 'Valloric/YouCompleteMe'
+
 call plug#end()
 

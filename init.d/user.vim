@@ -13,10 +13,15 @@ set number
 " always show status line
 set laststatus=2
 
+" syntax folding
 set foldcolumn=2
 set foldmethod=syntax
-set colorcolumn=80
 
+" highlights the 81st column, but only if there are
+" at least 80 characters in the line already
+highlight ColorColumn ctermbg=red ctermfg=blue
+call matchadd('ColorColumn', '\%81v', 100)
+
+" custom filetype extensions
 au BufNewFile,BufRead *.guile set filetype=scheme
-au BufNewFile,BufRead *.gtest set filetype=cpp
 

@@ -4,7 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 
 " enahanced syntax highlighting for c-family languages using clang
-Plug 'bbchung/Clamp'
+" Plug 'bbchung/Clamp'
 
 " search for files in project
 Plug 'ctrlpvim/ctrlp.vim'

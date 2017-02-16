@@ -26,5 +26,5 @@ call matchadd('ColorColumn', '\%81v', 100)
 au BufNewFile,BufRead *.guile set filetype=scheme
 au BufNewFile,BufRead *.gtest set filetype=cpp
 
-imap <c-u> <esc>vbU<esc>ei<right>
+inoremap <c-u> <esc>vbU<esc>ei<right>
 

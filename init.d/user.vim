@@ -27,5 +27,7 @@ au BufNewFile,BufRead *.guile set filetype=scheme
 au BufNewFile,BufRead *.gtest set filetype=cpp
 
 let mapleader = " "
+let maplocalleader = "\\"
+
 inoremap <c-u> <esc>vbU<esc>ei<right>
 

@@ -31,6 +31,9 @@ Plug 'takac/vim-hardtime'
 " wrapper around libclang for vimscript
 Plug 'libclang-vim/libclang-vim'
 
+" dependency for other xolox plugins...
+Plug 'xolox/vim-misc'
+
 " lint asynchronously (and more?)
 Plug 'neomake/neomake'
 
@@ -39,6 +42,8 @@ Plug 'frankier/neovim-colors-solarized-truecolor-only'
 
 " nix syntax highlighting and filetype detection
 Plug 'LnL7/vim-nix'
+
+Plug 'xolox/vim-notes'
 
 " rust syntax highlighting
 Plug 'rust-lang/rust.vim'
@@ -63,6 +68,9 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " snippets allow code completion based on templates (see vim-snippets)
 Plug 'SirVer/ultisnips'
+
+" scroll through things with ][
+Plug 'tpope/vim-unimpaired'
 
 " popular completion plugin; if you want to enable it disable deoplete
 " Plug 'Valloric/YouCompleteMe'

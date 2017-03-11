@@ -1,7 +1,3 @@
-" Fix termguicolors, from https://github.com/vim/vim/issues/993
-" let &t_8f = "\<Esc>[38;2;%lu;%lu;lum"
-" let &t_8b = "\<Esc>[48;2;%lu;%lu;lum"
-
 " aesthetics
 " set termguicolors
 set background=dark
@@ -50,8 +46,23 @@ let maplocalleader = "\\"
 nnoremap H 0
 nnoremap L $
 
+" command line mode remappings
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+cnoremap swr w !sudo tee % > /dev/null
+
 " insert mode remappings
 inoremap <c-u> <esc>viw U<esc>ei<right>
 inoremap <esc> <nop>
-inoremap jk <esc>
+inoremap l; <esc>
+
+" terminal mode remappings
+tnoremap l; <C-\><C-N>
+tnoremap <C-h> <C-\><C-N><C-w>h
+tnoremap <C-j> <C-\><C-N><C-w>j
+tnoremap <C-k> <C-\><C-N><C-w>k
+tnoremap <C-l> <C-\><C-N><C-w>l
+
+" make tab completion work like zsh
+set wildmenu
+set wildmode=full
 

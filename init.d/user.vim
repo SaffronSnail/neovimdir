@@ -10,7 +10,7 @@ set softtabstop=2
 set tabstop=2
 
 " show tabs
-set listchars=tab:->
+set listchars=tab:▷▷,trail:✕
 set list
 
 " displays line/col #, etc.
@@ -53,7 +53,7 @@ cnoremap swr w !sudo tee % > /dev/null
 " insert mode remappings
 inoremap <c-u> <esc>viw U<esc>ei<right>
 inoremap <esc> <nop>
-inoremap l; <esc>
+inoremap jk <esc>
 
 " terminal mode remappings
 tnoremap l; <C-\><C-N>

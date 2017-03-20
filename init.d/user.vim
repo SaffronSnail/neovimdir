@@ -26,6 +26,9 @@ set relativenumber
 " always show status line
 set laststatus=2
 
+" persistent undo information
+set undofile
+
 " syntax folding
 set foldcolumn=2
 set foldmethod=syntax

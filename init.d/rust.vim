@@ -1,0 +1,2 @@
+:hi link SpecialComment Comment
+

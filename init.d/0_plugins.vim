@@ -6,12 +6,15 @@ call plug#begin('~/.local/share/nvim/plugged')
 " enahanced syntax highlighting for c-family languages using clang
 " Plug 'bbchung/Clamp'
 
+Plug 'frankier/neovim-colors-solarized-truecolor-only'
+
 " adds an operator for toggling commenting
 Plug 'tpope/vim-commentary'
 
-" search for files in project
-" Plug 'ctrlpvim/ctrlp.vim'
+" GDB support
+Plug 'vim-scripts/Conque-GDB'
 
+" search for files in project Plug 'ctrlpvim/ctrlp.vim' 
 " code-completion that takes advantage of neovim's async abilities
 " if you want to use it disable YouCompleteMe
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -35,17 +38,14 @@ Plug 'libclang-vim/libclang-vim'
 " Plug 'xolox/vim-misc'
 
 " lint asynchronously (and more?)
-" Plug 'neomake/neomake'
-
-" well-designed color scheme (see http://ethanschoonover.com/solarized)
-Plug 'frankier/neovim-colors-solarized-truecolor-only'
+Plug 'neomake/neomake'
 
 " nix syntax highlighting and filetype detection
 " Plug 'LnL7/vim-nix'
 
 Plug 'xolox/vim-notes'
 
-" rust syntax highlighting
+" standalone rustc-based syntax highlighting and error checking
 Plug 'rust-lang/rust.vim'
 
 " a community repository of snippets for a variety of languages
@@ -53,6 +53,9 @@ Plug 'rust-lang/rust.vim'
 
 " enahanced tab completion; unfortunately incompatible with YouCompleteMe
 " Plug 'ervandew/supertab'
+
+" the most popular syntax checker, but is unaware of neovim (i.e. no async)
+" Plug 'vim-syntastic/syntastic'
 
 " text objects for c/c++
 Plug 'libclang-vim/vim-textobj-clang'

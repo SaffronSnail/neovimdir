@@ -1,5 +1,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+" 
+Plug 'tpope/tpope-vim-abolish'
+
 " enhanced status bar
 " Plug 'vim-airline/vim-airline'
 
@@ -30,6 +33,9 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " prevent repeated uses of hjkl
 " Plug 'takac/vim-hardtime'
+
+" support for Hardware Description Language
+Plug 'suoto/vim-hdl'
 
 " wrapper around libclang for vimscript
 Plug 'libclang-vim/libclang-vim'

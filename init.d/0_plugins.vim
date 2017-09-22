@@ -41,7 +41,7 @@ Plug 'suoto/vim-hdl'
 Plug 'libclang-vim/libclang-vim'
 
 " dependency for other xolox plugins...
-" Plug 'xolox/vim-misc'
+Plug 'xolox/vim-misc'
 
 " lint asynchronously (and more?)
 Plug 'neomake/neomake'

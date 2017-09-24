@@ -61,7 +61,7 @@ Plug 'rust-lang/rust.vim'
 " Plug 'ervandew/supertab'
 
 " the most popular syntax checker, but is unaware of neovim (i.e. no async)
-" Plug 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'
 
 " text objects for c/c++
 Plug 'libclang-vim/vim-textobj-clang'

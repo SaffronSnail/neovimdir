@@ -4,7 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/tpope-vim-abolish'
 
 " enhanced status bar
-" Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
 
 " enahanced syntax highlighting for c-family languages using clang
 " Plug 'bbchung/Clamp'

@@ -4,6 +4,9 @@ set termguicolors
 set background=dark
 colorscheme solarized
 
+" enable the mouse (useful for resizing splits)
+set mouse=a
+
 " tab settings
 set expandtab
 set shiftwidth=2

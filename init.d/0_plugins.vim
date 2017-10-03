@@ -34,9 +34,6 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 " prevent repeated uses of hjkl
 " Plug 'takac/vim-hardtime'
 
-" support for Hardware Description Language
-Plug 'suoto/vim-hdl'
-
 " wrapper around libclang for vimscript
 Plug 'libclang-vim/libclang-vim'
 

@@ -2,7 +2,7 @@
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 " enable the mouse (useful for resizing splits)
 set mouse=a
@@ -72,4 +72,8 @@ tnoremap <C-l> <C-\><C-N><C-w>l
 " make tab completion work like zsh
 set wildmenu
 set wildmode=full
+
+" auto-insert newlines
+set textwidth=80
+set formatoptions+=t
 

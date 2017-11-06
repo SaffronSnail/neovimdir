@@ -37,11 +37,6 @@ set undofile
 set foldcolumn=2
 set foldmethod=syntax
 
-" highlights the 81st column, but only if there are
-" at least 80 characters in the line already
-highlight ColorColumn ctermbg=red ctermfg=blue
-call matchadd('ColorColumn', '\%81v', 100)
-
 " custom filetype extensions
 au BufNewFile,BufRead *.guile set filetype=scheme
 au BufNewFile,BufRead *.gtest set filetype=cpp
@@ -73,7 +68,13 @@ tnoremap <C-l> <C-\><C-N><C-w>l
 set wildmenu
 set wildmode=full
 
+" highlights the 81st column, but only if there are
+" at least 80 characters in the line already
+highlight ColorColumn ctermbg=red ctermfg=blue
+call matchadd('ColorColumn', '\%81v', 100)
+
 " auto-insert newlines
 set textwidth=80
 set formatoptions+=t
+set wrapmargin=80
 
